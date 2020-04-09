@@ -1,3 +1,5 @@
+// MULTIPLICATION BY TWO
+
 console.log('01. Multiply Number by 2\n');
 
 function multiplicationByTwo(number) {
@@ -13,6 +15,8 @@ function multiplicationByTwo(number) {
 
 multiplicationByTwo(4);
 
+// EXCELLENT GRADE
+
 console.log('\n02. Excellent Grade\n');
 
 function excellentGrade(grade) {
@@ -25,6 +29,8 @@ function excellentGrade(grade) {
 
 excellentGrade(5.50);
 
+// NUMBERS FROM 1 TO 5
+
 console.log('\n03. Numbers from 1 to 5\n');
 
 function numbersFrom1to5() {
@@ -34,6 +40,8 @@ function numbersFrom1to5() {
 }
 
 numbersFrom1to5();
+
+// NUMBERS FROM N TO 1
 
 console.log('\n04. Numbers from N to 1\n');
 
@@ -45,6 +53,8 @@ function numbersFromNto1(n) {
 
 numbersFromNto1(5);
 
+// NUMBERS FROM M TO N
+
 console.log('\n05. Numbers from M to N\n');
 
 function numbersFromMtoN(m, n) {
@@ -55,6 +65,8 @@ function numbersFromMtoN(m, n) {
 
 numbersFromMtoN(6, 2);
 
+// STUDENT INFORMATION
+
 console.log('\n06. Student Information\n');
 
 function studentInfo(name, age, avgGrade) {
@@ -62,6 +74,8 @@ function studentInfo(name, age, avgGrade) {
 }
 
 studentInfo('John', 15, 5.54678);
+
+// MONTH PRINTER
 
 console.log('\n07. Month Printer\n');
 
@@ -85,6 +99,8 @@ function monthPrinter(monthInNumber) {
 
 monthPrinter(2);
 
+// FOREIGN LANGUAGES
+
 console.log('\n08. Foreign Languages\n');
 
 function excellentGrade(country) {
@@ -100,26 +116,81 @@ function excellentGrade(country) {
 
 excellentGrade('USA');
 
+// THEATRE PROMOTIONS
+
 console.log('\n09. Theatre Promotions\n');
 
-function excellentGrade() {
-
+function theatrePromotions(day, age) {
+    switch (day) {
+        case 'Weekday': {
+            if (age >= 0 && age <= 18) {
+                console.log('12$');
+            } else if (age >= 18 && age <= 64) {
+                console.log('18$');
+            } else if (age >= 64 && age <= 122) {
+                console.log('12$');
+            } else {
+                console.log('Error!');
+            }
+        }; break;
+        case 'Weekend': {
+            if (age >= 0 && age <= 18) {
+                console.log('15$');
+            } else if (age >= 18 && age <= 64) {
+                console.log('20$');
+            } else if (age >= 64 && age <= 122) {
+                console.log('15$');
+            } else {
+                console.log('Error!');
+            }
+        }; break;
+        case 'Holiday': {
+            if (age >= 0 && age <= 18) {
+                console.log('5$');
+            } else if (age >= 18 && age <= 64) {
+                console.log('12$');
+            } else if (age >= 64 && age <= 122) {
+                console.log('10$');
+            } else {
+                console.log('Error!');
+            }
+        }; break;
+        default: {
+            console.log('Error!');
+        }; break;
+    }
 }
 
-excellentGrade();
+theatrePromotions('Weekdy', 2);
 
-console.log('\n\n');
+// DIVISIBLE BY 3
 
-function excellentGrade() {
+console.log('\n10. Divisible by 3\n');
 
+function divisibleBy3() {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 2 !== 0 && i % 3 === 0) {
+            console.log(i);
+        }
+    }
 }
 
-excellentGrade();
+divisibleBy3();
 
-console.log('\n\n');
+// SUM OF ODD NUMBERS
 
-function excellentGrade() {
+console.log('\n11. Sum Of Odd Numbers\n');
 
+function sumOfOddNumbers(n) {
+    let sum = 0;
+    for (let i = 1, j = 0; j !== n; i++) {
+        if (i % 2 !== 0) {
+            console.log(i);
+            sum += i;
+            j++;
+        }
+    }
+    console.log(`Sum: ${sum}`);
 }
 
-excellentGrade();
+sumOfOddNumbers(5);
